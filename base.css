@@ -12,14 +12,36 @@
   font-size: 16px;
 
   /* Primary */
+  --red: #ff7979;
+  --green: #38cc8b;
+  --purple: #5e54a4;
 
   /* Neutral */
+  --black: #3d3b48;
+  --light: #bab7d4;
 
   /* Typography */
-  --h1: 1.75rem;
+  --h1: 3.125rem;
+  --h1-line-height: 55px;
+  --h1-letter-spacing: -0.5px;
 
   --body: 1rem;
   --body-line-height: 26px;
+
+  --body-s: 0.9375rem;
+  --body-s-line-height: 26px;
+  --body-s-letter-spacing: 0.25px;
+
+  --small: 0.6875rem;
+  --small-line-height: 26px;
+
+  --button: 0.9375rem;
+  --button-line-height: 26px;
+  --button-letter-spacing: 1px;
+
+  --input: 0.875rem;
+  --input-line-height: 26px;
+  --input-letter-spacing: 0.25px;
 }
 
 body {
@@ -31,18 +53,39 @@ body {
 
 h1 {
   font-size: var(--h1);
-  font-weight: 900;
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+  font-weight: 700;
 }
 
 .body-text {
   font-size: var(--body);
   line-height: var(--body-line-height);
 }
+
+.body-s-text {
+  font-size: var(--body-s);
+  line-height: var(--body-s-line-height);
+  letter-spacing: var(--body-s-letter-spacing);
+}
+
+.small-text {
+  font-size: var(--small);
+  line-height: var(--small-line-height);
+}
+
+.input-text {
+  font-size: var(--input);
+  line-height: var(--input-line-height);
+  letter-spacing: var(--input-letter-spacing);
+}
+
 @media (max-width: 375px) {
   :root {
-    --h1: 22px;
+    --h1: 1.75rem;
+    --h1-line-height: 36px;
+    --h1-letter-spacing: -0.3px;
 
-    --body: 0.938rem;
-    --body-line-height: 25px;
+    --small-line-height: 21px;
   }
 }
