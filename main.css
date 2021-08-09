@@ -114,3 +114,44 @@
 .header-form-btn {
   width: 100%;
 }
+
+@media (max-width: 950px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-form-container {
+    margin: 64px 0 0 0;
+  }
+
+  .header-title,
+  .header-description {
+    text-align: center;
+  }
+
+  .header-description {
+    margin-top: 36px;
+  }
+
+  .header-form-input-group {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-pricing {
+    padding: 18px 50px;
+  }
+
+  .header-form {
+    padding: 24px;
+  }
+
+  .header-form-input {
+    padding: 15px 58px 15px 20px;
+  }
+
+  .header-form-error-icon {
+    right: 18px;
+  }
+}
