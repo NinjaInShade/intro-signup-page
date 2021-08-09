@@ -27,13 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Desktop_active_solution.png)
+![](./screenshots/Mobile_solution.png)
+![](./screenshots/Mobile_active_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-intro-signup-form-with-validation-WCPrtsoBu)
+- Live Site URL: (https://lm-intro-signup-page.netlify.app/)
 
 ## My process
 
@@ -45,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-Not done yet.
+I learned about the previousSiblingElement and nextSiblingElement javascript selectors. Reason i had to use these was to add classes onto sibling elements of the input field, which is the original element selected to easily access the value for validation. I also practiced javascript looping to validate multiple fields for emptyness.
 
 ## Author
 
