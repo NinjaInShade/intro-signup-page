@@ -49,6 +49,7 @@
 }
 
 .header-form-input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +62,7 @@
   color: var(--black);
   border: 2px solid var(--light-gray);
   border-radius: 5px;
-  padding: 15px 32px;
+  padding: 15px 70px 15px 32px;
   font-weight: 600;
   width: 100%;
 }
@@ -75,6 +76,10 @@
   color: var(--gray);
 }
 
+.header-form-input-error {
+  border: 2px solid var(--red);
+}
+
 .header-form-error-text {
   align-self: flex-end;
   font-style: italic;
@@ -83,8 +88,15 @@
   margin-top: 6px;
 }
 
-.header-form-error-text-hidden {
+.header-form-error-text-hidden,
+.header-form-error-icon-hidden {
   display: none;
+}
+
+.header-form-error-icon {
+  position: absolute;
+  top: 19px;
+  right: 30px;
 }
 
 .header-form-terms {
