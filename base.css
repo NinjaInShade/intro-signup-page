@@ -14,10 +14,14 @@
   /* Primary */
   --red: #ff7979;
   --green: #38cc8b;
+  --green-hover: #77e2b3;
+
   --purple: #5e54a4;
 
   /* Neutral */
   --black: #3d3b48;
+  --gray: rgba(61, 59, 72, 0.75);
+  --light-gray: #dedede;
   --light: #bab7d4;
 
   /* Typography */
@@ -42,13 +46,22 @@
   --input: 0.875rem;
   --input-line-height: 26px;
   --input-letter-spacing: 0.25px;
+
+  --container-max-width: 1100px;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: no-repeat url('./assets/bg-intro-desktop.png') center / cover;
+  background-color: var(--red);
+  padding: 88px 24px 58px 24px;
   min-height: 100vh;
+}
+
+main {
+  width: 100%;
 }
 
 h1 {
@@ -80,6 +93,12 @@ h1 {
   letter-spacing: var(--input-letter-spacing);
 }
 
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media (max-width: 375px) {
   :root {
     --h1: 1.75rem;
@@ -87,5 +106,10 @@ h1 {
     --h1-letter-spacing: -0.3px;
 
     --small-line-height: 21px;
+  }
+
+  body {
+    background: no-repeat url('./assets/bg-intro-mobile.png') center / cover;
+    background-color: var(--red);
   }
 }

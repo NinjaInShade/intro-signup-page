@@ -9,13 +9,61 @@
     <link rel="stylesheet" href="buttons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
     <title>Intro signup page</title>
   </head>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main></main>
+    <main>
+      <header>
+        <div class="container header-container">
+          <div class="header-text">
+            <h1 class="header-title">Learn to code by watching others</h1>
+            <p class="body-text header-description">
+              See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+              understanding how developers think is invaluable.
+            </p>
+          </div>
+          <section class="header-form-container">
+            <div class="header-pricing">
+              <p class="body-s-text header-pricing-description">
+                <span>Try it free 7 days </span>then $20/mo. thereafter
+              </p>
+            </div>
+            <form class="header-form">
+              <div class="header-form-input-group">
+                <input type="text" class="input-text header-form-input" placeholder="First Name" />
+                <small class="small-text header-form-error-text header-form-error-text-hidden">Input is valid</small>
+              </div>
+
+              <div class="header-form-input-group">
+                <input type="text" class="input-text header-form-input" placeholder="Last Name" />
+                <small class="small-text header-form-error-text header-form-error-text-hidden">Input is valid</small>
+              </div>
+
+              <div class="header-form-input-group">
+                <input type="text" class="input-text header-form-input" placeholder="Email Address" />
+                <small class="small-text header-form-error-text header-form-error-text-hidden">Input is valid</small>
+              </div>
+
+              <div class="header-form-input-group">
+                <input type="text" class="input-text header-form-input" placeholder="Password" />
+                <small class="small-text header-form-error-text header-form-error-text-hidden">Input is valid</small>
+              </div>
+
+              <button class="btn btn-primary header-form-btn" type="submit">Claim your free trial</button>
+              <small class="small-text header-form-terms"
+                >By clicking the button, you are agreeing to our <a href="./index.html">Terms and Services</a></small
+              >
+            </form>
+          </section>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
